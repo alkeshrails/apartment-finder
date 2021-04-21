@@ -3,7 +3,7 @@ import React from 'react';
 function Filters(props) {
   const { filterStates = {}} = props;
   return (
-    <div className="mt-4">
+    <div className="mt-4 filters">
       <div className="fs-4 text-center fw-500">
         Price
           </div>
