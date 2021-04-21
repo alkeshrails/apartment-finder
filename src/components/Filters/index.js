@@ -6,16 +6,16 @@ function Filters(props) {
     <div className="mt-4 filters">
       <div className="fs-4 text-center fw-500">
         Price
-          </div>
+      </div>
       <div className="d-flex p-2 justify-content-around">
         <div>
           <div className="text-center">Min Price</div>
           <div>
             <select className="select" placeholder="min price" value={filterStates.minPrice} onChange={(e) => props.setFilterStates({ ...filterStates, minPrice: e.target.value })}>
               <option value={0} disabled={filterStates.maxPrice && filterStates.maxPrice < 0}>0$</option>
-              <option value={100} disabled={filterStates.maxPrice && filterStates.maxPrice < 100}>100$</option>
               <option value={200} disabled={filterStates.maxPrice && filterStates.maxPrice < 200}>200$</option>
-              <option value={300} disabled={filterStates.maxPrice && filterStates.maxPrice < 300}>300$</option>
+              <option value={400} disabled={filterStates.maxPrice && filterStates.maxPrice < 400}>400$</option>
+              <option value={600} disabled={filterStates.maxPrice && filterStates.maxPrice < 600}>600$</option>
             </select>
           </div>
         </div>
@@ -23,10 +23,10 @@ function Filters(props) {
           <div className="text-center">Max Price</div>
           <div>
             <select className="select" placeholder="max price" value={filterStates.maxPrice} onChange={(e) => props.setFilterStates({ ...filterStates, maxPrice: e.target.value })}>
-              <option value={100} disabled={filterStates.minPrice && filterStates.minPrice > 100}>100$</option>
-              <option value={200} disabled={filterStates.minPrice && filterStates.minPrice > 200}>200$</option>
-              <option value={300} disabled={filterStates.minPrice && filterStates.minPrice > 300}>300$</option>
-              <option value=''>300$+</option>
+              <option value={200} disabled={filterStates.minPrice && filterStates.minPrice > 100}>200$</option>
+              <option value={400} disabled={filterStates.minPrice && filterStates.minPrice > 200}>400$</option>
+              <option value={600} disabled={filterStates.minPrice && filterStates.minPrice > 300}>600$</option>
+              <option value=''>600$+</option>
             </select>
           </div>
         </div>

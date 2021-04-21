@@ -20,10 +20,10 @@ function ApartmentList(props) {
           <div key={item.id}>
             <div className="apartment mt-2">
               <div className="position-relative">
-                <img width="100%" height="300px" alt="apartment" src={item.imageUrl} />
+                <img width="100%" height="300px" alt="apartment" src={item.picture} />
                 <div className="price-tag position-absolute w-100 px-3 py-2">
-                  <div>{item.price}</div>
-                  <div>{item.pricePerSqMtr}</div>
+                  <div>{`${item.price} $`}</div>
+                  <div>{`${Math.floor(item.price/item.sqm)} $/m^2`}</div>
                 </div>
               </div>
             </div>
@@ -33,13 +33,13 @@ function ApartmentList(props) {
               </div>
               <div className="row m-0 py-2 border-bottom">
                 <div className="col-4 text-left border-right">
-                  {item.sqMtr}
+                  {`${item.sqm} m^2`}
                 </div>
                 <div className="col-4 text-center border-right">
-                  {item.bedCount} beds
+                  {item.number_of_bedrooms} beds
                 </div>
                 <div className="col-4 text-right">
-                  {item.bathCount} bath
+                  {item.number_of_bathrooms} bath
                 </div>
               </div>
             </div>
