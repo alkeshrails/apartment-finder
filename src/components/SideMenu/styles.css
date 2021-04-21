@@ -1,0 +1,21 @@
+.side-menu-open{
+  width: 260px;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+  background-color: #35AF6C;
+  transition: width 0.7s;
+  height: 590px;
+  color: white;
+}
+
+.side-menu-close {
+  width: 0px;
+  position: absolute;
+  overflow: hidden;
+  background-color: #35AF6C;
+  transition: width 0.7s;
+  height: 590px;
+  color: white;
+  z-index: 10;
+}

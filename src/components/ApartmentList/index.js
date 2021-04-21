@@ -28,7 +28,7 @@ function ApartmentList(props) {
               </div>
             </div>
             <div className="apartment-details">
-              <div className="apartment-title p-2 text-primary border-bottom">
+              <div className="apartment-title p-2 text-primary border-bottom fs-4 fw-500">
                 {item.title}
               </div>
               <div className="row m-0 py-2 border-bottom">
@@ -37,10 +37,10 @@ function ApartmentList(props) {
                 </div>
                 <div className="col-4 text-center border-right">
                   {item.bedCount} beds
-                      </div>
+                </div>
                 <div className="col-4 text-right">
                   {item.bathCount} bath
-                      </div>
+                </div>
               </div>
             </div>
           </div>
