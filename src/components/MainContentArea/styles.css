@@ -1,0 +1,14 @@
+.search-and-filter {
+  background-color: #722AA0;
+}
+
+.search-icon {
+  top: 2px;
+  right: 2px;
+}
+
+.filter-btn {
+  background-color: #722AA0;
+  border: none;
+  color: white;
+}
